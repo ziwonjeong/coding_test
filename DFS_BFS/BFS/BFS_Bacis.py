@@ -1,7 +1,6 @@
 from collections import deque
 
 # queue 구조 활용
-
 def bfs(graph, start, visited):
     queue = deque([start])
     visited[start] = True
@@ -27,6 +26,6 @@ graph = [
         [1,7]
 ]
 
-breakpoint()
+
 visited = [False] * 9
 bfs(graph, 1, visited)
