@@ -7,6 +7,9 @@ solution of example for coding test with python
 3. 책 3부
 4. 시험 전 까지 많은 기출 문제 풀이
 
+# Code note
+
+
 ### Greedy 
 
 # Example site
