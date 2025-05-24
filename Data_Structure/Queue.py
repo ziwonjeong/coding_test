@@ -1,22 +1,26 @@
-# Queue: FIFO (first-in, first-out)
-import queue
+# Queue: FIFO (first-in, first-out) 
+'''
+from collections impore deque VS. import queue VS. list
+https://potato-robot.tistory.com/5
+- Queue (fifo): deque > list
+- Stack (filo): deque = list
+'''
 
-data_queue = queue.Queue()
-data_queue.put(1)
-data_queue.put(2)
-data_queue.put(3)
+from collections import deque
 
-print(data_queue.get())
-print(data_queue.get())
-print(data_queue)
+queue = deque()
+queue.append(1) # 오른쪽으로 넣기
+queue.appendleft(2) # 왼쪽으로 넣기
+queue.pop() #오른쪽에서 빼기
+queue.popleft() #왼쪽에서 빼기
+print(queue)
 
 
-# Priority Queue
-data_queue = data_queue.PriorityQueue()
-data_queue.put((10, "korea"))
-data_queue.put((5, 1))
-data_queue.put((15, "china"))
+# Queue
+for i in range(5):
+    queue.append(i)
 
-print(data_queue.get())
-print(data_queue.get())
-print(data_queue.get()) 
+print(f"{queue=}")
+
+queue.reverse()
+print(queue)
